@@ -72,11 +72,11 @@ const scrollToRight = () =>{
         <div className='flex gap-4 xl:hidden' >
           <div  >
 
-    <FontAwesomeIcon className={isLeftButtonActive ? 'text-white cursor-pointer' : 'text-gray-400 cursor-not-allowed'}   size='2x' onClick={scrollToLeft} icon={faArrowCircleLeft} />
+    <FontAwesomeIcon className={isLeftButtonActive ? 'text-white cursor-pointer' : 'text-gray-400 cursor-not-allowed'}   size='3x' onClick={scrollToLeft} icon={faArrowCircleLeft} />
           </div>
           <div>
 
-    <FontAwesomeIcon className={isRightButtonActive ? 'text-white cursor-pointer' : 'text-gray-400 cursor-not-allowed'}   size='2x' onClick={scrollToRight} icon={faArrowCircleRight} />
+    <FontAwesomeIcon className={isRightButtonActive ? 'text-white cursor-pointer' : 'text-gray-400 cursor-not-allowed'}   size='3x' onClick={scrollToRight} icon={faArrowCircleRight} />
           </div>
 </div>
     </div>
