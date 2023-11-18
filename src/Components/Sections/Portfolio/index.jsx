@@ -21,9 +21,10 @@ const Portfolio = () => {
     };
 
     PortfolioContainerRef.current.addEventListener('scroll', handleScroll);
+    const removePortfolioContainerRef =PortfolioContainerRef.current
 
     return () => {
-      PortfolioContainerRef.current.removeEventListener('scroll', handleScroll);
+      removePortfolioContainerRef.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

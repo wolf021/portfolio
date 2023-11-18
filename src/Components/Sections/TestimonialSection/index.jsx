@@ -20,9 +20,9 @@ const TestimonialSection = () => {
     };
 
     myContainerRef.current.addEventListener('scroll', handleScroll);
-
+   const removemyContainerRef = myContainerRef.current
     return () => {
-      myContainerRef.current.removeEventListener('scroll', handleScroll);
+     removemyContainerRef.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
