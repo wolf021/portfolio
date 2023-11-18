@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero1 from "@/Assets/hero1.jpg"
-import Hero2 from "@/Assets/character.png"
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
@@ -22,7 +21,7 @@ const Hero = () => {
                 <button className='bg-gradient-to-r from-blue-600 to-purple-700 py-2 px-4 rounded-lg' >Get Started</button>
             </div>
         </div>
-        <div id='hero-img-bg'  className='bg-gradient-to-r from-blue-600 to-purple-700 xl:h-[400px] xl:w-[500px] xl:block overflow-hidden hidden ' >
+        <div id='hero-img-bg'  className='bg-gradient-to-r from-blue-600 to-purple-700 xl:h-[400px] xl:w-[500px] xl:block overflow-hidden sm:hidden' >
         <Image src={Hero1} className='h-[400px] w-full ' alt="" />
         </div>
         
