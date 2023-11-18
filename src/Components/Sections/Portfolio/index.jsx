@@ -54,7 +54,7 @@ const scrollToRight = () =>{
 
 <h3 className=' text-transparent text-xl bg-clip-text bg-gradient-to-r from-blue-600 to-purple-700 '>Portfolio</h3>
 <p className='text-2xl'>Our Work</p>
-<p className='text-lg'>I've had the pleasure of working on.
+<p className='text-lg'>I had the pleasure of working on.
     Each project showcases my skills and passion for creating meaningful and innovative solutions </p>
     <button onClick={scrollToLeft} >Card</button>
 </div>
