@@ -2,26 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 15%, rgb(7, 2, 46) 50%, rgb(28, 4, 74) 96%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+li:hover{
+  color: purple;
+ transition: 0.5s ease-in-out;
+}
+#hero-img-bg {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: hero-bg linear 10s infinite;
+}
+
+@keyframes hero-bg {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 55% 45% 27% 73% / 58% 55% 45% 42% ;
+  }
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+ 
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+#mouse-pointer{
+ 
+  width: 20px;
+  height: 20px;
+  border: 8px solid #00f;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  animation: glow 8s infinite;
+ 
+}
+
+
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.6;
+    border-radius: 0% 100% 25% 75% / 77% 44% 56% 23% ;
+    
+    
+  }
+  50% {
+    opacity: 1;
+    border-radius: 1% 99% 31% 69% / 0% 62% 38% 100% ;
+  }
+
 }
