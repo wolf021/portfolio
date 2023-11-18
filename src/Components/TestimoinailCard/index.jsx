@@ -18,7 +18,7 @@ const TestimonialCard = () => {
             <div className='bg-blue-400 rounded-full w-[70px] h-[70px] overflow-hidden ' >
                 <Image src={Avatar1} className='w-full '  alt='' />
             </div>
-            <p>Joseph Gonzalez</p>
+            <p>Joseph Gonzalez.</p>
         </div>
     </div>
   )
