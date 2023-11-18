@@ -21,7 +21,7 @@ const Hero = () => {
                 <button className='bg-gradient-to-r from-blue-600 to-purple-700 py-2 px-4 rounded-lg' >Get Started</button>
             </div>
         </div>
-        <div id='hero-img-bg'  className='bg-gradient-to-r from-blue-600 to-purple-700 xl:h-[400px] xl:w-[500px] xl:block overflow-hidden sm:hidden' >
+        <div id='hero-img-bg'  className='bg-gradient-to-r from-blue-600 to-purple-700 xl:h-[400px] xl:w-[500px] xl:inline overflow-hidden hidden' >
         <Image src={Hero1} className='h-[400px] w-full ' alt="" />
         </div>
         
