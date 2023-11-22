@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-import Logo from "@/Assets/logo.png" 
+import Logo from "../../Assets/logo.png" 
 import Image from 'next/image'
  
 const Header = () => {

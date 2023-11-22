@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
 import React from "react"
-import Logo from "@/Assets/logo.png" 
+import Logo from "../../Assets/logo.png" 
 import Link from "next/link"
 import { faMailBulk, faMailReply } from "@fortawesome/free-solid-svg-icons"
 
