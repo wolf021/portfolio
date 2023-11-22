@@ -2,15 +2,12 @@ import { faBars, faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React, { useState } from 'react'
-
-import Logo from "../../Assets/logo.png" 
-import Image from 'next/image'
  
 const Header = () => {
     const [isHamburger, setIsHamburger] = useState(false)
   return (
  <div className='flex justify-between items-center relative h-[4rem]' >
-    <div className='lg:flex-1 flex items-center space-x-4 '><Image src={Logo} alt="" /> </div>
+    <div className='lg:flex-1 flex items-center space-x-4 '>Tayyab Iqbal </div>
     <div id='nav-links-container' className='lg:flex xl:flex gap-4 items-center flex-grow lg:justify-between 2xl:flex xl:justify-between 2xl:justify-between max-[912px]:hidden' >
     <ul id='nav-links' className='flex lg:w-[50%] lg:justify-between   ' >
             <Link href={"#why-us"}>

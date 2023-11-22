@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
 import React from "react"
-import Logo from "../../Assets/logo.png" 
+
 import Link from "next/link"
 import { faMailBulk, faMailReply } from "@fortawesome/free-solid-svg-icons"
 
@@ -17,7 +17,7 @@ const Footer = () => {
     <>
     <div className="flex xl:justify-around flex-col xl:flex-row items-center space-y-10 mt-10 py-4 bg-black ">
       <div className="justfiy-center flex flex-col items-center space-y-2 xl:w-[30%] text-center ">
-        <Image src={Logo} alt="" />
+        
         <p>Tayyab iqbal</p>
         <p> Mern/React Developer having Good industry experiance Tailoring Websites as per the needs of the clients.   </p>
       </div>
