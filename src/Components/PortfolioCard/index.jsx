@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const PortfolioCard = ({tech,description,link,title,Img}) => {
   return (
-    <div className='h-[20rem] xl:min-w-[20rem] w-[20rem] min-w-full  group relative overflow-hidden hover:shadow-xl transition-all duration-700 rounded-xl  '>
+    <div  className='h-[20rem] xl:min-w-[20rem] w-[20rem] min-w-full  group relative overflow-hidden hover:shadow-xl transition-all duration-700 rounded-xl  '>
         <div className='w-full h-[100%] bg-black' >
             <Image className='w-full h-[100%]' src={Img} alt="" />
         </div>

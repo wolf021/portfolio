@@ -62,9 +62,9 @@ const scrollToRight = () =>{
 </div>
 <div ref={PortfolioContainerRef} id='service-card-container' className='flex xl:flex-wrap overflow-x-auto xl:gap-5 justify-start items-center my-5 ' >
           {
-           projects.map(project =>(
+           projects.map((project) =>(
 
-             <PortfolioCard key={project.title} title={project.title} tech={project.technology} description={project.description} link={project.link} Img={project.image} />
+             <PortfolioCard key={project.id} title={project.title} tech={project.technology} description={project.description} link={project.link} Img={project.image} />
            ))
           }
 

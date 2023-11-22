@@ -51,38 +51,42 @@ export const faqData = [
     // Add more FAQ entries as needed
   ];
   
-export const projects = [
-  { title: "Emerson",
-    image:Project1,
-    technology: ["Next JS", "SCSS"],
-    description: 'Emerson is one of the biggest company in US providing engineering servives to business. i recreated the UI with some added features',
-    link: 'https://www.emerson.com/en-us',
-  },
-  { title: "falabella",
-  image:Project2,
-
-    technology: ["React", "NodeJS", "Css"],
-    description: 'Falabella is the largest south aferica store i was responsible for creating Ui for the websites with some other developers working on backend ',
-    link: 'https://www.falabella.com/falabella-cl',
-  },
-  { title: "Jio",
-  image:Project3,
-
-    technology: ["React", "NodeJS", "SCSS","MUI"],
-    description: 'Jio is india sim company. i was resposible for redevelopment the Ui and some features .',
-    link: 'https://www.jio.com/business/',
-  },
-  { title: "TruCar",
-  image:Project4,
-
-    technology: ["React", "NodeJS", "Css","Express"],
-    description: 'Trucar.com is car listing websites which is made to list people cars',
-    link: 'https://www.truecar.com/',
-  },
+  export const projects = [
+    { 
+      id: 1,
+      title: "Emerson",
+      image: Project1,
+      technology: ["Next JS", "SCSS"],
+      description: 'Emerson is one of the biggest companies in the US providing engineering services to businesses. I recreated the UI with some added features.',
+      link: 'https://www.emerson.com/en-us',
+    },
+    { 
+      id: 2,
+      title: "Falabella",
+      image: Project2,
+      technology: ["React", "NodeJS", "Css"],
+      description: 'Falabella is the largest South American store. I was responsible for creating UI for the websites with some other developers working on the backend.',
+      link: 'https://www.falabella.com/falabella-cl',
+    },
+    { 
+      id: 3,
+      title: "Jio",
+      image: Project3,
+      technology: ["React", "NodeJS", "SCSS", "MUI"],
+      description: 'Jio is an Indian SIM company. I was responsible for redeveloping the UI and adding some features.',
+      link: 'https://www.jio.com/business/',
+    },
+    { 
+      id: 4,
+      title: "TruCar",
+      image: Project4,
+      technology: ["React", "NodeJS", "Css", "Express"],
+      description: 'Trucar.com is a car listing website made for listing people\'s cars.',
+      link: 'https://www.truecar.com/',
+    },
+    // Add more projects as needed
+  ];
   
-  // Add more technologies as needed
-];
-
  const testimonials = [
   {
     author: 'Alex Thompson',
