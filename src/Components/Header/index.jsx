@@ -11,7 +11,7 @@ const Header = () => {
   return (
  <div className='flex justify-between items-center relative h-[4rem]' >
     <div className='lg:flex-1 flex items-center space-x-4 '><Image src={Logo} alt="" /> </div>
-    <div id='nav-links-container' className='lg:flex xl:flex gap-4 items-center flex-grow lg:justify-between hidden' >
+    <div id='nav-links-container' className='lg:flex xl:flex gap-4 items-center flex-grow lg:justify-between 2xl:flex xl:justify-between 2xl:justify-between max-[912px]:hidden' >
     <ul id='nav-links' className='flex lg:w-[50%] lg:justify-between   ' >
             <Link href={"#why-us"}>
             <li className='hover'>Why Us</li>
@@ -28,10 +28,12 @@ const Header = () => {
             
             </ul>
             <div>
+            <Link href={"https://wa.me/+923214308481"} >
                 <button className='bg-gradient-to-r from-blue-600 to-purple-700 py-2 px-4 rounded-lg' >Lets Talk</button>
+                </Link>
             </div>
     </div>
-    <div className='xl:hidden'>
+    <div className='xl:hidden lg:hidden '>
         {
             !isHamburger?  <FontAwesomeIcon icon={faBars} className='text-3xl' onClick={()=> setIsHamburger(true)} />  : <FontAwesomeIcon icon={faCircleXmark}  className='text-2xl' onClick={()=> setIsHamburger(false)} />
         

@@ -15,7 +15,7 @@ import Image from 'next/image'
 export default function Home() {
 
   return (
-    <main className=" px-4 lg:px-10">
+    <main className=" px-4 lg:px-10 2xl:px-[15rem]  ">
       <Header/>
       <Hero/>
       <ServiceSection/>

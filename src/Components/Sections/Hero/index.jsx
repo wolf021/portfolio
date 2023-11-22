@@ -3,6 +3,7 @@ import Hero1 from "@/Assets/hero1.jpg"
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 const Hero = () => {
     const scrolDown = () =>{
@@ -18,7 +19,10 @@ const Hero = () => {
         <h1 className=' text-6xl ' >We Develop <span className='  text-transparent text-5xl bg-clip-text bg-gradient-to-r from-blue-600 to-purple-700 "' >amazing</span>  websites for your <span className='  text-transparent text-5xl bg-clip-text bg-gradient-to-r from-blue-600 to-purple-700 "' >business</span>. </h1>
         <p className='my-5'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iste dolores ullam, rerum consectetur minus in nam veritatis nostrum libero similique, distinctio vel expedita mollitia perspiciatis esse ipsum deleniti rem?</p>
         <div>
-                <button className='bg-gradient-to-r from-blue-600 to-purple-700 py-2 px-4 rounded-lg' >Get Started</button>
+        <Link href={"mailto:tayyab9021@gmail.com"} >
+
+                <button className='bg-gradient-to-r from-blue-600 to-purple-700 py-2 px-4 rounded-lg' >Mail Us</button>
+        </Link>
             </div>
         </div>
         <div id='hero-img-bg'  className='bg-gradient-to-r from-blue-600 to-purple-700 xl:h-[400px] xl:w-[500px]  xl:visible overflow-hidden invisible w-[0px] h-[0px] ' >
