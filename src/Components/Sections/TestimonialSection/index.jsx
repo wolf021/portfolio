@@ -2,7 +2,7 @@ import TestimonialCard from '@/Components/TestimoinailCard'
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React,{useRef,useEffect,useState} from 'react'
-
+import testimonials, {testimon} from '@/Data/Data'
 const TestimonialSection = () => {
     const myContainerRef = useRef()
 
@@ -50,7 +50,7 @@ const TestimonialSection = () => {
       };
     
   return (
-    <div className='my-10'>
+    <div className='my-10 no-scrollbar  ' id='testimonial' >
          <div className='xl:w-[50%]  '>
 
 <h3 className=' text-transparent text-xl bg-clip-text bg-gradient-to-r from-blue-600 to-purple-700 '>Testimonials</h3>
@@ -59,11 +59,15 @@ const TestimonialSection = () => {
 
 </div>
 <div ref={myContainerRef} className='my-5 flex overflow-x-scroll no-scrollbar ' >
-    <TestimonialCard/>
-    <TestimonialCard/>
-    <TestimonialCard/>
-    <TestimonialCard/>
-    <TestimonialCard/>
+   {
+    testimonials.map(test=>(
+
+      <TestimonialCard key={test.author} avatar={test.image} author={test.author} text={test.text} />
+    ))
+   }
+
+    
+    
 </div>
 <div className='flex gap-4' >
     <div>

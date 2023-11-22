@@ -3,6 +3,7 @@ import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
 import { faArrowAltCircleLeft, faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React,{useRef,useState,useEffect} from 'react'
+import {projects} from "@/Data/Data"
 
 const Portfolio = () => {
   const PortfolioContainerRef = useRef()
@@ -50,7 +51,7 @@ const scrollToRight = () =>{
 
 
   return (
-    <div className='my-10'>
+    <div className='my-10' id='portfolio' >
         <div className='xl:w-[50%]'>
 
 <h3 className=' text-transparent text-xl bg-clip-text bg-gradient-to-r from-blue-600 to-purple-700 '>Portfolio</h3>
@@ -60,14 +61,15 @@ const scrollToRight = () =>{
     <button onClick={scrollToLeft} >Card</button>
 </div>
 <div ref={PortfolioContainerRef} id='service-card-container' className='flex xl:flex-wrap overflow-x-auto xl:gap-5 justify-start items-center my-5 ' >
-           <PortfolioCard/>
-           <PortfolioCard/>
-           <PortfolioCard/>
-           <PortfolioCard/>
-           <PortfolioCard/>
-           <PortfolioCard/>
-           <PortfolioCard/>
-           <PortfolioCard/>
+          {
+           projects.map(project =>(
+
+             <PortfolioCard key={project.title} title={project.title} tech={project.technology} description={project.description} link={project.link} Img={project.image} />
+           ))
+          }
+
+        
+          
         </div>
         <div className='flex gap-4 xl:hidden' >
           <div  >
