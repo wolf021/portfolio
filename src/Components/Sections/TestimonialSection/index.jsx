@@ -1,5 +1,5 @@
 import TestimonialCard from '@/Components/TestimoinailCard'
-import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleLeft, faArrowAltCircleRight, faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React,{useRef,useEffect,useState} from 'react'
 import testimonials, {testimon} from '@/Data/Data'
@@ -72,11 +72,11 @@ const TestimonialSection = () => {
 <div className='flex gap-4' >
     <div>
 
-    <FontAwesomeIcon   className={isLeftButtonActive ? 'text-white cursor-pointer' : 'text-gray-400 cursor-not-allowed'} size='3x'  onClick={scrollToLeft} icon={faArrowAltCircleLeft} />
+    <FontAwesomeIcon   className={isLeftButtonActive ? 'text-white cursor-pointer' : 'text-gray-400 cursor-not-allowed'} size='3x'  onClick={scrollToLeft} icon={faArrowCircleLeft} />
     </div>
     <div>
 
-    <FontAwesomeIcon  className={isRightButtonActive ? 'text-white cursor-pointer' : 'text-gray-400 cursor-not-allowed'} size='3x' onClick={scrollToRight} icon={faArrowAltCircleRight} />
+    <FontAwesomeIcon  className={isRightButtonActive ? 'text-white cursor-pointer' : 'text-gray-400 cursor-not-allowed'} size='3x' onClick={scrollToRight} icon={faArrowCircleRight} />
     </div>
 </div>
     </div>

@@ -94,7 +94,7 @@ export const faqData = [
     image: Avatar1, // Add the image file name or URL here
   },
   {
-    author: 'Emily Rodriguez',
+    author: 'John Rodriguez',
     text: 'I am thrilled with the results of my website development project. Tayyabs innovative solutions and proficiency in the latest web technologies made a significant impact. The website not only looks fantastic but also performs flawlessly across various devices. I highly recommend his services.',
     image: Avatar2, // Add the image file name or URL here
   },
